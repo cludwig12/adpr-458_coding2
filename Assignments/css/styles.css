@@ -107,13 +107,34 @@ img.circle {
     text-align: center;
 }
 
-#nav-menu li.acive a 
+#nav-menu li.acive a, 
 #nav-menu li a:hover {
+    background-color: #555;
+}
+
+#toggle-button {
+    margin-left: auto;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    transition: 0.2s all;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.125rem;
+    transition: 0.2s all;
+}
+
+#toggle-button:hover,
+#toggle-button:focus {
     background-color: #666;
 }
-#toggle-button {
-    margin-left:auto;
+
+#toggle-button:focus {
+    background-color: #777;
 }
+
 #nav-menu ul.active + #toggle-button {
     position: absolute;
     top: 12px;
@@ -187,5 +208,12 @@ a.button:visited {
     }
     .card {
         flex: 0 1 324px;
+    }
+}
+/*mobile layout*/
+@media (max-width: 40em) {
+    #nav-menu ul.active {
+        display: flex;
+        flex-direction: column;
     }
 }
