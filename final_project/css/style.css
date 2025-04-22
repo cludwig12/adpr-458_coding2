@@ -76,7 +76,7 @@ img.square {
 img.square {
     object-fit: cover;
     border-radius: 0px;
-    border: 6px darkslategrey;
+    border: 6px rgb(47, 79, 79);
     border-style: solid;
 }
 /*Navagation*/
@@ -88,6 +88,7 @@ img.square {
     justify-content: center;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 #nav-menu ul{
@@ -115,7 +116,7 @@ img.square {
     text-align: center;
 }
 
-#nav-menu li.acive a, 
+#nav-menu li.active a, 
 #nav-menu li a:hover {
     background-color: #072b00df;
 }
@@ -156,7 +157,7 @@ a.button {
     padding: 12px;
     margin-top: 20px;
     text-decoration: none;
-    background-color: dodgerblue;
+    background-color: rgb(47, 79, 79);
     color: #fff;
     text-align: center;
     font-weight: 600;
@@ -166,12 +167,13 @@ a.button {
 
 a.button:hover {
     transform: translateY(-2px);
-    background-color: rgb(100, 180, 250);
+    background-color: rgb(108, 181, 181);
     box-shadow: 4px 8px 28px -10px rgba(0,0,0,0.56);
 }
 
 a.button:active {
-    background-color: rgb(10, 110, 210);
+    background-color: #253b80bb;
+    ;
 }
 
 a.button:visited {
@@ -199,6 +201,11 @@ a.button:visited {
 }
 .card-text {
     padding: 0 2rem;
+}
+.card img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
 }
 /* Desktop Layout */
 
