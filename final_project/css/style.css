@@ -62,7 +62,9 @@ h3 {
     font-size: 24px;
     
 }
-
+h4 {
+    font-size: 28px;
+}
 aside {
     text-align: center;
     padding-top:  20px;
@@ -78,6 +80,9 @@ img.square {
     border-radius: 0px;
     border: 6px rgb(47, 79, 79);
     border-style: solid;
+}
+.indent {
+    margin-left: 30px;
 }
 /*Navagation*/
 
@@ -207,6 +212,8 @@ a.button:visited {
     height: auto; 
     object-fit: cover;
 }
+
+
 /* Desktop Layout */
 
 @media screen and (min-width: 40em) {
@@ -241,4 +248,10 @@ a.button:visited {
         display: flex;
         flex-direction: column;
     }
+}
+
+/* Campaign Video Styles */
+
+.embed-video iframe {
+    width: 100%;
 }
